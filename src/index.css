@@ -83,11 +83,14 @@ input:focus {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .article-section{
     min-width: 70vw;
     max-width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .article-ul {
@@ -112,6 +115,7 @@ input:focus {
     margin-right: 20px;
     cursor: pointer;
     text-wrap: nowrap;
+    font-size: 1rem;
 }
 
 .first-section {
@@ -392,6 +396,17 @@ nav .logo {
     width: 20rem;
 }
 
+.modal-createNew-card-img .already{
+    font-size: 0.7rem;
+    text-align: end;
+    margin-right: 2rem;
+}
+
+.modal-createNew-card-img .already span{
+    color: blue;
+    font-weight: bold;
+}
+
 .inputArea .b{
     margin-top: 1rem;
     background-color: #2F6CE5;
@@ -413,3 +428,8 @@ nav .logo {
 }
 
 
+@media (max-width: 827px) {
+    .sideLocationNotLogin-wrapper{
+        display: none;
+    }
+}

@@ -8,7 +8,7 @@ const SelectionAreaNoSignIn = () => {
         <>
             {/* selction area */}
             <div className='first-section w-full ' >
-                <div className='article-section relative mt-3 d-flex justify-content-between align-items-center' >
+                <div className='article-section relative mt-3 ' >
                     <ul className='d-flex article-ul align-items-center' >
                         <li>All Posts(32)</li>
                         <li>Article</li>

@@ -1,5 +1,6 @@
-import React from 'react'
-
+import React,{useState} from 'react'
+import group from './../assets/Group.png'
+import group from './../assets/Group.png'
 const ModalSignIn = () => {
 
     const [show, SetShow] = useState(true);
@@ -13,9 +14,9 @@ const ModalSignIn = () => {
             {
                 show && (
                     <>
-                        <div className='modal-createNew' onClick={handleClick}>
+                        <div className='modal-createNew' >
                             <div className='modal-createNew-card'>
-                                <div className='position-absolute modalClose'>x</div>
+                                <div className='position-absolute modalClose'  onClick={handleClick}>x</div>
                                 <p className='modal-createNew-card-first' >Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
                                 <div className='d-flex p-2 justify-content-between' >
                                     <div className='inputAndImage'>
@@ -50,6 +51,7 @@ const ModalSignIn = () => {
                                         </div>
                                     </div>
                                     <div className='modal-createNew-card-img'>
+                                    <p className='already'>Create new account ??  </p>
                                         <img src={group} alt="" />
                                     </div>
                                 </div>

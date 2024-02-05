@@ -1,14 +1,20 @@
 import React, { useRef, useState } from 'react'
 import group from './../assets/Group.png'
+// import { useNavigate } from 'react-router-dom';
 
 
 
 const ModalCreateNew = () => {
 
     const [show, SetShow] = useState(true);
+    const [showOther, setShowOther] = useState(false);
 
-    const handleClick = ()=>{
-        SetShow((prev)=> !prev);
+    const handleThisClick = () => {
+        setShowOther(() => true)
+    }
+
+    const handleClick = () => {
+        SetShow((prev) => !prev);
     }
 
     return (
@@ -53,6 +59,10 @@ const ModalCreateNew = () => {
                                         </div>
                                     </div>
                                     <div className='modal-createNew-card-img'>
+                                        <p className='already'>Already have an account ?? <span onClick={() => {
+                                            SetShow(false)
+                                            // navigate('/signIn');
+                                        }}> Sign in </span> </p>
                                         <img src={group} alt="" />
                                     </div>
                                 </div>

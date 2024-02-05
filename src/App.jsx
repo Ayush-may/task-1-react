@@ -8,13 +8,21 @@ import SmalCard from './components/SmalCard';
 import BigImage from './components/BigImage';
 import SideLocationWithFollow from './components/SideLocationWithFollow';
 import ModalCreateNew from './components/ModalCreateNew';
+import Lenis from '@studio-freight/lenis'
+
+const lenis = new Lenis()
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
 
 
 const App = () => {
     return (
         <>
             <ModalCreateNew />
-            <div>
+            <div className='mb-5'>
                 <NavNoSign />
                 <BigImage />
                 <SelectionAreaNoSignIn className='' />
