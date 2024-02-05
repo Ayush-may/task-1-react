@@ -335,8 +335,23 @@ nav .logo {
     min-height: 400px;
     background-color: white;
     border-radius: 4px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
+}
+
+.modalClose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    top: -40px;
+    right: 0;
+    color: black;
+    line-height: 20px;
+    background-color: white;
+    border-radius: 990px;
+    cursor: pointer;
 }
 
 .modal-createNew-card-first{
@@ -351,7 +366,7 @@ nav .logo {
 
 .inputAndImage{
     margin-top: -10px;
-    padding:0 1rem;
+    padding:0 2rem;
 }
 
 .formArea .createNew{
@@ -360,12 +375,13 @@ nav .logo {
 }
 
 .inputArea{
+
     border-radius: 4px ;
 }
 
 .inputArea input{
     background-color: #F7F8FA;
-    color: #D9D9DB;
+    color: black;
     font-weight: 500;
     padding: 0.5rem;
     font-size: 0.8rem;
